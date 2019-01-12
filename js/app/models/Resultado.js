@@ -29,4 +29,13 @@ class Resultado{
         return this._dataPartida;
     }
 
+    get vencedor(){
+        if(this._golsCasa == this._golsVisitante)
+            return 'empate';
+        else if(this._golsCasa > this._golsVisitante)
+            return this._timeCasa;
+        else if(this._golsCasa < this._golsVisitante)
+            return this._timeVisitante;
+    }
+
 }

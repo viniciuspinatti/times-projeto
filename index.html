@@ -12,6 +12,8 @@
         <p>Cadastro de resultados</p>
     </div>
 
+    <div id="mensagem"></div>
+
     <div>
         <form onsubmit="resultadoController.adiciona(event)">
             <div class="input-group">
@@ -46,23 +48,14 @@
         </form>
     </div>
 
-    <div>
-        <p class="lista-titulo">Lista de resultados</p>
 
-        <table>
-            <thead>
-                <th>Casa</th>
-                <th>Gols</th>
-                <th>Gols</th>
-                <th>Visitante</th>
-                <th>Data</th>
-            </thead>
-            <tbody>
+    <p class="lista-titulo">Lista de resultados</p>
+    <div id="resultadosView"></div>
 
-            </tbody>
-        </table>
-    </div>
     <script src="js/app/models/Resultado.js"></script>
+    <script src="js/app/helpers/DateHelper.js"></script>
+    <script src="js/app/models/ListaResultado.js"></script>
+    <script src="js/app/views/ResultadoView.js"></script>
     <script src="js/app/controllers/ResultadoController.js"></script>
     <script>
         let resultadoController = new ResultadoController();
