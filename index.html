@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de resultados</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="topo">
+        <p>Cadastro de resultados</p>
+    </div>
+
+    <div>
+        <form onsubmit="resultadoController.adiciona(event)">
+            <div class="input-group">
+                <label for="time-casa">Casa</label>
+                <input type="text" name="time-casa" id="time-casa" placeholder="Ex: Corinthians" autofocus>
+            </div>
+
+            <div class="input-group">
+                <label for="time-visitante">Visitante</label>
+                <input type="text" name="time-visitante" placeholder="Ex: São Paulo" id="time-visitante">
+            </div>
+
+            <div class="input-group">
+                <label for="gols-casa">Gols Casa</label>
+                <input type="number" name="gols-casa" id="gols-casa">
+            </div>
+
+            <div class="input-group">
+                <label for="gols-visitante">Gols Visitante</label>
+                <input type="number" name="gols-visitante" id="gols-visitante">
+            </div>
+
+            <div class="input-group">
+                <label for="data-partida">Data da partida</label>
+                <input type="date" name="data-partida" id="data-partida">
+            </div>
+
+            <div class="input-group">
+                    <label><!-- Preencher espaço para table-cell do CSS --></label>
+                <input type="submit" value="Adicionar">
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <p class="lista-titulo">Lista de resultados</p>
+
+        <table>
+            <thead>
+                <th>Casa</th>
+                <th>Gols</th>
+                <th>Gols</th>
+                <th>Visitante</th>
+                <th>Data</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="js/app/models/Resultado.js"></script>
+    <script src="js/app/controllers/ResultadoController.js"></script>
+    <script>
+        let resultadoController = new ResultadoController();
+    </script>
+</body>
+
+</html>
