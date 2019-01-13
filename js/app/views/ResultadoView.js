@@ -1,7 +1,7 @@
-class ResultadoView {
+class ResultadoView extends View{
 
     constructor(elemento) {
-        this._elemento = elemento;
+        super(elemento);
     }
 
     template(model) {
@@ -32,10 +32,6 @@ class ResultadoView {
                 </tbody>
             </table>
             `;
-    }
-
-    update(model) {
-        this._elemento.innerHTML = this.template(model);
     }
 
 }

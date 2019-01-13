@@ -12,7 +12,7 @@
         <p>Cadastro de resultados</p>
     </div>
 
-    <div id="mensagem"></div>
+    <div class="mensagem" id="mensagemView"></div>
 
     <div>
         <form onsubmit="resultadoController.adiciona(event)">
@@ -52,10 +52,13 @@
     <p class="lista-titulo">Lista de resultados</p>
     <div id="resultadosView"></div>
 
-    <script src="js/app/models/Resultado.js"></script>
     <script src="js/app/helpers/DateHelper.js"></script>
+    <script src="js/app/models/Resultado.js"></script>
     <script src="js/app/models/ListaResultado.js"></script>
+    <script src="js/app/models/Mensagem.js"></script>
+    <script src="js/app/views/View.js"></script>
     <script src="js/app/views/ResultadoView.js"></script>
+    <script src="js/app/views/MensagemView.js"></script>
     <script src="js/app/controllers/ResultadoController.js"></script>
     <script>
         let resultadoController = new ResultadoController();

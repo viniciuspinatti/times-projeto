@@ -7,6 +7,9 @@ class Resultado{
         this._golsCasa = golsCasa;
         this._golsVisitante = golsVisitante;
         this._dataPartida = dataPartida;
+
+        // Programação defensiva para evitar alteração dos atributos
+        Object.freeze(this);
     }
 
     get timeCasa(){

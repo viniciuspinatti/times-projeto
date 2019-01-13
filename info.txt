@@ -1,0 +1,3 @@
+O presente projeto é apenas um treino de estudos de Orientação a Objetos com JS ES6.
+Todo o conteúdo pode ser utilizado para qualquer finalidade e distribuído.
+Em caso de dúvidas, o e-mail para contato é viniciuspinatti@hotmail.com
